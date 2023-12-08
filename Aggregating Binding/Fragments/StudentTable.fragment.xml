@@ -1,0 +1,33 @@
+<core:FragmentDefinition xmlns="sap.m"  xmlns:core="sap.ui.core">    
+    <Table items ="{/data}">
+        <headerToolbar>
+            <Toolbar>
+                <Title text="Student Details" />
+            </Toolbar>
+        </headerToolbar>
+        <columns>
+            <Column >
+                <Label text="First Name"/>
+            </Column>
+            <Column >
+                <Label text="Second Name"/>
+            </Column>
+            <Column >
+                <Label text="Percent"/>
+            </Column>
+            <Column >
+                <Label text="Result"/>
+            </Column>
+        </columns>
+        <items>
+            <ColumnListItem>
+                    <Text text="{fname}"/>
+                    <Text text="{lname}"/>
+                    <Text text="{percent}"/>
+                    <!-- <Text text="{result}"/> -->
+                    <!-- ObjectStatus -->  
+                    <ObjectStatus text="{result}" state="Warning"/>
+            </ColumnListItem>
+        </items>
+    </Table>
+    </core:FragmentDefinition>    
